@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: maheshnaramdas/tictac:game
+          image: maheshnaramdas/restaurant-app:v1
           ports:
             - containerPort: 80
