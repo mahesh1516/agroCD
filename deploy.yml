@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: maheshnaramdas/restaurant-app:v1
+          image: maheshnaramdas/app:javaapp
           ports:
             - containerPort: 80
