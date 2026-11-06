@@ -1,14 +1,13 @@
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mydeploy
+  namespace: myapp
 spec:
   replicas: 4
   selector:
     matchLabels:
       app: swiggy
-
   template:
     metadata:
       labels:
@@ -19,4 +18,3 @@ spec:
           image: maheshnaramdas/tictac:game
           ports:
             - containerPort: 80
-              
